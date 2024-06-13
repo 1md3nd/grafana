@@ -715,7 +715,7 @@ const (
 	// Enables the backend query flow for Open Search datasource plugin
 	FlagOpenSearchBackendFlowEnabled = "openSearchBackendFlowEnabled"
 
-	// FlagScopeDashboards
+	// FlagPassScopeToDashboardApi
 	// Enables the passing of scopes to dashboards fetching in Grafana
-	FlagScopeDashboards = "scopeDashboards"
+	FlagPassScopeToDashboardApi = "passScopeToDashboardApi"
 )

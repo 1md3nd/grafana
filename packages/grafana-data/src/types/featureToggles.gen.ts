@@ -195,5 +195,5 @@ export interface FeatureToggles {
   pinNavItems?: boolean;
   authZGRPCServer?: boolean;
   openSearchBackendFlowEnabled?: boolean;
-  scopeDashboards?: boolean;
+  passScopeToDashboardApi?: boolean;
 }

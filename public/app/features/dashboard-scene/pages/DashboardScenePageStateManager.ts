@@ -249,7 +249,7 @@ export class DashboardScenePageStateManager extends StateManagerBase<DashboardSc
   }
 
   private getScopes(): string[] | undefined {
-    if (!config.featureToggles.scopeFilters || !config.featureToggles.scopeDashboards) {
+    if (!config.featureToggles.scopeFilters || !config.featureToggles.passScopeToDashboardApi) {
       return undefined;
     }
 
