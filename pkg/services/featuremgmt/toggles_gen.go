@@ -714,4 +714,8 @@ const (
 	// FlagOpenSearchBackendFlowEnabled
 	// Enables the backend query flow for Open Search datasource plugin
 	FlagOpenSearchBackendFlowEnabled = "openSearchBackendFlowEnabled"
+
+	// FlagDatabaseReadReplica
+	// Use a read replica for some database queries.
+	FlagDatabaseReadReplica = "databaseReadReplica"
 )
