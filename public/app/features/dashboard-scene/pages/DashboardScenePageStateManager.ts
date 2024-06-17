@@ -97,7 +97,7 @@ export class DashboardScenePageStateManager extends StateManagerBase<DashboardSc
 
           break;
         case DashboardRoutes.Home:
-          rsp = await getBackendSrv().get('/api/dashboards/home', { scopes });
+          rsp = await getBackendSrv().get('/api/dashboards/home');
 
           if (rsp.redirectUri) {
             return rsp;
@@ -111,10 +111,10 @@ export class DashboardScenePageStateManager extends StateManagerBase<DashboardSc
 
           break;
         case DashboardRoutes.Public: {
-          return await dashboardLoaderSrv.loadDashboard('public', '', uid, { scopes });
+          return await dashboardLoaderSrv.loadDashboard('public', '', uid);
         }
         default:
-          rsp = await dashboardLoaderSrv.loadDashboard('db', '', uid, { scopes });
+          rsp = await dashboardLoaderSrv.loadDashboard('db', '', uid);
 
           if (route === DashboardRoutes.Embedded) {
             rsp.meta.isEmbedded = true;
